@@ -44,15 +44,9 @@ nav = document.querySelector("nav"),
 	links = document.querySelector(".links");
 
 
-	modeToggle.addEventListener("click", () => {
-		modeToggle.classList.toggle("active");
-		body.classList.toggle("dark");
-	})
-
 	
 
 	menu.onclick = function () {
-		console.log('jk,km');
 		links.classList.toggle("active");
 		menu.classList.toggle("openmenu");
 	}
