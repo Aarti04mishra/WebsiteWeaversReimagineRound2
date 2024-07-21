@@ -434,7 +434,7 @@ html,body{
         z-index: 999;
     }
 
-    .ri-heart-line,
+    .heart,
     .ri-user-line {
         display: none;
     }
@@ -509,7 +509,7 @@ html,body{
         width: 6vw;
     }
 
-    .ri-heart-line,
+    .heart,
     .ri-user-line {
         display: none;
     }
@@ -1254,3 +1254,157 @@ html,body{
 .custom-prev {
     left: 10px;
   }
+
+
+
+  
+.page7 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3vw 1vw;
+    justify-content: space-between;
+}
+
+.page7 .elem {
+    height: 100%;
+    width: 30%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page7 .elem img {
+    height: 75vh;
+    width: 100vw;
+    object-fit: cover;
+    scale: 1.1;
+}
+
+.page7 .elem .dets {
+    height: 45px;
+    border-radius: 25px;
+    width: 70%;
+    position: absolute;
+    z-index: 9;
+}
+
+.dets {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hover {
+    display: flex;
+    width: 20.5vw;
+    height: 33vh;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin: 4vh;
+    bottom: 0px;
+    padding: 10px;
+    opacity: 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.hover:hover {
+    opacity: 1;
+}
+
+.hover .new img {
+    width: 9vw;
+    height: 19vh;
+    display: flex;
+}
+
+.new p {
+    font-size: 8px;
+    text-align: center;
+}
+
+.heart:before {
+    content: "\ee0f";
+    font-size: 1.5vw;
+    display: block;
+}
+
+
+@media (max-width: 700px) {
+
+
+    .icons {
+        padding: 7px;
+    }
+
+    .page7 {
+        height: fit-content;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+        align-items: center;
+
+    }
+
+    .page7 .elem {
+        height: fit-content;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .page7 .elem img {
+        height: 100%;
+    }
+
+    .heart:before {
+        content: "\ee0f";
+        font-size: 2.5vw;
+        display: block;
+    }
+
+    .hover .new img {
+        width: 22vw;
+    }
+
+    .hover {
+        /* width: 68.6vw;
+    height: 25vh; */
+        display: none;
+    }
+
+    .page7 .elem .dets {
+        width: 42%;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+
+    .hover {
+        display: none;
+    }
+
+    .page7 .elem .dets {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 1150px) {
+
+    .hover .new img {
+        width: 9vw;
+        height: 14vh;
+        display: flex;
+    }
+}
