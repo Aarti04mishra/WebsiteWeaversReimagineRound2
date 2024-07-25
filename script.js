@@ -175,7 +175,7 @@ const container = document.querySelector('.container');
           showSlider('prev')
       }
       let timeRunning=3000;
-      let timeAutoNext=7000;
+      let timeAutoNext=3000;
       let runTimeOut;
       runAutoRun=setTimeout(()=>{
           nextDom.click();
